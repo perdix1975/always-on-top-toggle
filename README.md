@@ -36,7 +36,6 @@ A lightweight Windows 11 utility that lets you **middle-click the X (close) butt
 - **Middle-click** the X button of any window to pin/unpin it
 - **Green border** appears around the window when it is pinned
 - **Popup notification** shows the current state (ON / OFF)
-- **Keyboard shortcut** `Ctrl+Alt+T` toggles the active window
 - Runs silently in the background, starts automatically with Windows
 
 ## Usage
@@ -44,7 +43,6 @@ A lightweight Windows 11 utility that lets you **middle-click the X (close) butt
 | Action | Result |
 |--------|--------|
 | Middle-click on window's X button | Toggle Always On Top |
-| `Ctrl+Alt+T` | Toggle active window |
 
 When a window is pinned, its **border turns green** and a popup appears.
 Repeat the action to unpin and the border returns to normal.
