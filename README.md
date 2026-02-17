@@ -10,6 +10,27 @@ A lightweight Windows 11 utility that lets you **middle-click the X (close) butt
 ### Always On Top active (green border)
 ![Always On Top On](screenshots/always-on-top-on.png)
 
+## Download & Install
+
+### Easy install (recommended)
+1. Download **[always_on_top.exe](always_on_top.exe)**
+2. Double-click it — that's it!
+   - Installs automatically to `C:\AlwaysOnTopToggle\`
+   - Starts automatically with Windows
+   - No Python required
+
+### Manual install
+1. Make sure Python 3.x is installed
+2. Install dependencies:
+   ```
+   pip install pywin32 pynput
+   ```
+3. Run `always_on_top.py`
+4. For autostart, place a shortcut to `start_hidden.vbs` in:
+   ```
+   %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+   ```
+
 ## Features
 
 - **Middle-click** the X button of any window to pin/unpin it
@@ -17,23 +38,6 @@ A lightweight Windows 11 utility that lets you **middle-click the X (close) butt
 - **Popup notification** shows the current state (ON / OFF)
 - **Keyboard shortcut** `Ctrl+Alt+T` toggles the active window
 - Runs silently in the background, starts automatically with Windows
-
-## Requirements
-
-- Windows 11
-- Python 3.x
-
-## Installation
-
-1. Clone or download this repository
-2. Install dependencies:
-   ```
-   pip install pywin32 pynput
-   ```
-3. Run at startup by placing a shortcut to `start_hidden.vbs` in:
-   ```
-   %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
-   ```
 
 ## Usage
 
@@ -49,9 +53,15 @@ Repeat the action to unpin and the border returns to normal.
 
 | File | Description |
 |------|-------------|
-| `always_on_top.py` | Main program |
+| `always_on_top.exe` | Standalone installer (no Python needed) |
+| `always_on_top.py` | Main Python script |
 | `start_hidden.vbs` | Silent launcher (no console window) |
 | `restart.ps1` | Restart script |
+
+## Requirements
+
+- Windows 11 (Windows 10 may work but untested)
+- 64-bit system
 
 ## License
 
